@@ -25,4 +25,9 @@ urlpatterns = [
     path('third/',views.third,name="Third"),
     path('fourth/',views.fourth,name="Fourth"),
     path('fifth/',views.fifth,name="Fifth"),
+    path('urls_path/<name>',views.url_path,name="urls_path"),
+    path('ab/<ab>',views.ab,name="ab"),
+    path('ab/<a>/<b>',views.ab1,name="ab1"),
+    path('greater2/<a>/<b>',views.greater_2,name="greater of 2 numbers"),
+    path('greater3/<a>/<b>/<c>',views.greater_3,name="greater of 3 numbers"),
 ]
